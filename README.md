@@ -1,6 +1,8 @@
 # README
 
 ## .railsrc
+-b #Skip Bundle
+-T #Skip Test-Unit
 -B #Skip Bundle
 -T #Skip Test-Unit
 -d postgresql #Use postgres
