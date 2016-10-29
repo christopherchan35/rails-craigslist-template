@@ -1,0 +1,14 @@
+<%= form_for :article, url: category_articles_path(@category) do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %><br />
+
+  <%= f.label :body %>
+  <%= f.text_field :body %><br />
+
+  <%= f.label :email %>
+  <%= f.text_field :email %><br />
+
+  <%= f.label :price %>
+  <%= f.text_field :price %><br />
+  <%= f.submit %>
+<% end %>

@@ -1,0 +1,8 @@
+<p>Title: <%= @article.title %></p>
+<p>Body: <%= @article.body %></p>
+<p>Email: <%= @article.email %></p>
+<p>Price: <%= @article.price %></p>
+
+<%= link_to 'Edit', edit_article_path(@article) %><br><br>
+
+<%= link_to 'Delete', category_article_path(@article), method: :delete, data: { confirm: "sure?" }%>

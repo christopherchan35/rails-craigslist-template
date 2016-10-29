@@ -1,0 +1,7 @@
+<p><%= @category.name %></p>
+
+<%= link_to 'Create article', new_category_article_path(@category) %>
+
+<% @articles.each do |art| %>
+  <p><%= link_to art.title, category_article_path(@category, art) %></p>
+<% end %>
