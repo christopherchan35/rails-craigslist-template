@@ -1,24 +1,21 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## .railsrc
+-B #Skip Bundle
+-T #Skip Test-Unit
+-d postgresql #Use postgres
+--skip-turbolinks
 
-Things you may want to cover:
+## Set up steps
+- disable coffee-rails gem
+- disable turbolinks gem
 
-* Ruby version
+- add devise gem
+- add awesome_print gem
+- add better_errors gem
+- add binding_of_caller gem
+- add bootstrap-sass gem
+- add faker gem
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- rename to application.scss
+- create main.scss with bootstrap imports
