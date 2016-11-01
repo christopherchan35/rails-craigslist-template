@@ -3,9 +3,13 @@ Rails.application.routes.draw do
 
   root 'categories#index'
 
+  get 'categories/dashboard', :to => 'categories#dashboard'
+
   resources :categories do
     resources :articles
   end
 
   resources :articles, only: [:edit, :update]
+
+  get '/dashboard', :to => 'categories#dashboard'
 end

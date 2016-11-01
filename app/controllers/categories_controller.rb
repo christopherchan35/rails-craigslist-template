@@ -7,4 +7,7 @@ class CategoriesController < ApplicationController
     @category = Category.find(params[:id])
     @articles = @category.articles
   end
+
+  def dashboard
+  end
 end
