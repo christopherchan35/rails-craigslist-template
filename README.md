@@ -21,7 +21,7 @@ gem 'binding_of_caller'
 - Bootstrap and faker
 ```
 gem 'bootstrap-sass', '~> 3.3.6'
-- gem 'faker'
+gem 'faker'
 ```
 ```
 bundle install
