@@ -17,8 +17,13 @@ class ArticlesController < ApplicationController
     @article = Article.new(article_params)
     @category = Category.find(params[:category_id])
     @article.category_id = @category.id
+
     if @article.save
-      render 'show'
+      if request.xhr?
+        render json: @article
+      else
+        render 'show'
+      end
     else
       redirect_to '/'
     end
